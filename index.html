@@ -3,44 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projet CV</title>
-<!--    <link rel="stylesheet" href="./css/styles.css">-->
+    <title>Cv de Piquin Dylan</title>
+    <!--    <link rel="stylesheet" href="./css/styles.css">-->
 </head>
 <body>
-<header>
-    <h1 class="hidden">Projet CV</h1>
-<nav>
-    <h2 class="hidden" id="navigation">Navigation principal</h2>
+<header class="Navigation-principal">
+    <h1 aria-level="1" class="hidden">Cv de Piquin Dylan</h1>
+    <nav class="navigation">
+        <h2 aria-level="2" class="hidden" id="navigation">Navigation principal</h2>
 
-    <ul id="menuList">
-        <li><a href="">Home</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Services</a></li>
-        <li><a href="">Product</a></li>
-        <li><a href="">Contact</a></li>
-    </ul>
-  <div class="after-burger">
-    <button class="btn-1">
-        <span>Explore</span>
-    </button>
-      <input class="barre-de-recherche" type="search" placeholder="Search ...">
-
-      <button class="btn-3">
-        <span>A propos de moi </span>
-      </button>
-      <button class="btn-2">
-        <span>Multimdéia</span>
-      </button>
-
-  </div>
-    <div class="menu-icon-left">
-        <img class="burger-menu-icon" src="img/burger-bar.png" height="50" width="50" alt="Menu Icon" onclick="toggleMenu()" />
-    </div>
-    <div class="menu-icon-right">
-        <img class="loupe" src="img/loupe.png" height="50" width="50" alt="Search Icon">
-    </div>
-</nav>
+        <ul class="navigation-principal">
+            <li class="menu-item"><a href="">Home</a></li>
+            <li class="menu-item"><a href="">About</a></li>
+            <li class="menu-item"><a href="">Services</a></li>
+            <li class="menu-item"><a href="">Product</a></li>
+            <li class="menu-item"><a href="">Contact</a></li>
+        </ul>
+        <button class="btn-1">Explore</button>
+        <input class="search" type="search" placeholder="Search ...">
+        <button class="btn-2">A propos de moi</button>
+        <button class="btn-3">Multimédia</button>
+    </nav>
 </header>
-</script>
+<main>
+    <div class="sous-navigation">
+        <section class="navigation-secondaire">
+            <h2 class="hidden">Sous-navigation</h2>
+            <nav>
+                <h3 class="hidden">Navigation secondaire</h3>
+                <ul>
+                    <li class="sous-menu">Dylan Home</li>
+                    <li class="sous-menu">Profil</li>
+                    <li class="sous-menu">Parcours scolaire</li>
+                    <li class="sous-menu">Expérience</li>
+                    <li class="sous-menu">Environnement</li>
+                    <li class="sous-menu">Compétence</li>
+                    <li class="sous-menu">Chose a savoir</li>
+                </ul>
+            </nav>
+        </section>
+    </div>
+    <div>
+        <section>
+            <h1 class="hidden">Description</h1>
+            <h2>Dylan</h2>
+            <p class="description">Je m'appelle Dylan Piquin, j'ai 20 ans et je suis étudiant à la HELP à Seraing dans
+                l'option Web.</p>
+        </section>
+    </div>
+    <div class="info">
+        <section>
+            <h2 class="hidden">Info diplome</h2>
+            <p class="title-info">Obtention de mon diplôme</p>
+
+        </section>
+    </div>
+</main>
 </body>
 </html>
