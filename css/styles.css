@@ -1,116 +1,36 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
 .hidden{
     display: none;
 }
-html, body {
-    height: 100%;
-    width: 100%;
-    background: #3498db;
+.section-description{
+    background-color: black;
+}
+.title-name{
+    font-family: Inter sans-serif;
+    font-size: 3em;/* 48 / 16 */
+    font-weight: 800;
+    color: white;
+    margin: 0.33em 14px 0.52em;/* 16  / 48*/
+}
+.description{
+    font-family: "Public Sans",sans-serif ;
+    font-size: 1em;/* 16 / 16*/
+    line-height: 1.625em;/* 26 / 16*/
+    margin-left: 14px;
+    color: white;
+    padding-bottom: 135px;
+
+}
+section.Info{
+    background-color: #1D1B23;
+    color: white;
 }
 
-nav {
-    padding: 10px 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: white;
-    position: relative;
-    height: 70px;
-}
 
-
-
-.menu-icon-left img {
-    height: 50px;
-    width: 50px;
-    cursor: pointer;
-}
-
-
-
-/* Menu principal */
-nav ul {
-    display: flex;
-    gap: 30px;
-    align-items: center;
-    list-style-type: none;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-}
-
-/* Loupe à droite */
-.menu-icon-right {
-    display: flex;
-    align-items: center;
-}
-
-.menu-icon-right img {
-    height: 50px;
-    width: 50px;
-    cursor: pointer;
-}
-
-/* Responsivité */
-@media (max-width: 1024px) {
-    nav ul {
-        position: absolute;
-        top: 70px;
-        left: 0;
-        right: 0;
-        flex-direction: column;
-        text-align: center;
-        background: #004274;
-        gap: 0;
-        overflow: hidden;
-
-    }
-    .after-burger{
-        display: none;
+@media screen and (min-width: 1024px) {
+    .title-name{
+        font-size: 72px;
+        margin-left: 24px;
+        margin-bottom: 36px;
     }
 
-
-    nav ul li {
-        padding: 20px;
-        padding-top: 0;
-    }
-
-    .menu-icon-left {
-        position: absolute;
-        top: 10px;
-        left: 10px; /* Fixe le burger menu à gauche */
-    }
-
-    .menu-icon-right {
-        position: absolute;
-        top: 10px;
-        right: 10px; /* Fixe la loupe à droite */
-    }
-}
-
-@media (min-width: 1025px) {
-    .menu-icon-left,
-    .menu-icon-right {
-        display: none; /* Cache les deux images */
-    }
-    #menuList{
-        display: none;
-
-    }
-.btn-1{
-    margin-right: 69px;
-}
-.barre-de-recherche:focus {
-    border-radius: 0;
-}
-.btn-1,.btn-2,.btn-3{
-    border: none;
-}
 }
