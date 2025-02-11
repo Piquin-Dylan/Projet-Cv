@@ -3,7 +3,7 @@
 }
 
 .section-description {
-    background-color: red;
+    background-color: black;
 
 }
 
@@ -29,39 +29,60 @@
 .footer {
     background-color: black;
     color: white;
-    padding-top: 138px;
-    padding-left: 24px;
+    padding-top: 9.625em;/* 154px / 16*/
+    padding-left: 1.5em;/* 24 / 16*/
 }
 
 .title {
-    font-size: 18px;
+    font-size: 1.125em; /* 18 / 16*/
     font-family: "Inter", sans-serif;
     font-weight: bold;
     display: block;
-    margin-bottom: 22px;
+    margin-bottom: 2.444444em; /* 44 / 18*/
 
 }
 
 .description-projet {
+    font-size: 0.875em;/* 14 / 16*/
+    line-height: 1.642857142857143em;/* 23 / 14*/
+    margin-bottom: 1em;/* 14 / 14*/
     font-family: "Public Sans", sans-serif;
     color: #B9B9BB;
-    font-size: 14px;
-    margin-bottom: 14px;
     display: block;
 }
 
 .me {
-
+font-size: 0.9em;/* 14.4 / 16*/
+margin-bottom: 6.319em ;/* 91 / 14.4*/
+font-weight: normal;
+font-family: Inter, sans-serif;
 }
 
 section.container {
+    font-size: 0.875em;/* 14/ 16 */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     background-color: black;
     color: white;
-    padding-left: 24px;
+
+    padding: 6.5em 0  1.714em;/* 24 / 14 */  /* 91 / 14 */ /* 56 / 14*/
 }
+.item + .item {
+    margin-bottom:  0.800em;/* 11 / 16*/
+}
+.follow {
+    font-size: 14px;
+    font-family: Inter,sans-serif;
+    font-weight: normal;
+    color:  #959599;
+}
+
+
+
+
+
+
 
 
 @media screen and (min-width: 1024px) {
