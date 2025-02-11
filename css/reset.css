@@ -58,3 +58,9 @@ table {
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Inter';
+    src: url('../font/inter/static/Inter-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}

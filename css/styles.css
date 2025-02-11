@@ -1,33 +1,71 @@
-.hidden{
+.hidden {
     display: none;
 }
-.section-description{
-    background-color: black;
+
+.section-description {
+    background-color: red;
+
 }
-.title-name{
+
+.title-name {
     font-family: Inter sans-serif;
-    font-size: 3em;/* 48 / 16 */
+    font-size: 3em; /* 48 / 16 */
     font-weight: 800;
     color: white;
-    margin: 0.33em 14px 0.52em;/* 16  / 48*/
+    margin: 0.33em 14px 0.52em; /* 16  / 48*/
 }
-.description{
-    font-family: "Public Sans",sans-serif ;
-    font-size: 1em;/* 16 / 16*/
-    line-height: 1.625em;/* 26 / 16*/
+
+.description {
+    font-family: "Public Sans", sans-serif;
+    font-size: 1em; /* 16 / 16*/
+    line-height: 1.625em; /* 26 / 16*/
     margin-left: 14px;
     color: white;
     padding-bottom: 135px;
 
 }
-section.Info{
-    background-color: #1D1B23;
+
+/*Section footer*/
+.footer {
+    background-color: black;
     color: white;
+    padding-top: 138px;
+    padding-left: 24px;
+}
+
+.title {
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 22px;
+
+}
+
+.description-projet {
+    font-family: "Public Sans", sans-serif;
+    color: #B9B9BB;
+    font-size: 14px;
+    margin-bottom: 14px;
+    display: block;
+}
+
+.me {
+
+}
+
+section.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    background-color: black;
+    color: white;
+    padding-left: 24px;
 }
 
 
 @media screen and (min-width: 1024px) {
-    .title-name{
+    .title-name {
         font-size: 72px;
         margin-left: 24px;
         margin-bottom: 36px;

@@ -43,24 +43,25 @@
             <li class="sous-menu">Chose a savoir</li>
         </ul>
     </nav>
+    <div itemscope itemtype="https://schema.org/Person">
 
     <section class="section-description">
         <h2 class="hidden">Description</h2>
-        <h3 class="title-name">Dylan</h3>
-        <p class="description">Je m'appelle Dylan Piquin, j'ai 20 ans et je suis étudiant à la HELP à Seraing dans
+        <h3 class="title-name"><span itemprop="name">Dylan</span></h3>
+        <p class="description">Je m'appelle <span itemprop="givenName">Dylan</span> <span itemprop="familyName">Piquin</span>, j'ai <span itemprop="birthDate">20 ans</span> et je suis étudiant à la <span itemprop="alumniOf">HELP à Seraing</span> dans
             l'option Web.</p>
     </section>
 
-
-    <section class="Info">
+    </div>
+    <section class="Info" itemscope itemtype="https://schema.org/EducationEvent">
         <h2 class="hidden">Info diplome</h2>
         <span> Obtention de mon diplome</span>
         <article>
             <h3>Temps avant d'être diplomer</h3>
-            <span>12 432 heures, 745 920 minutes, 44 755 200 secondes</span></article>
+            <span itemprop="endDate">12 432 heures, 745 920 minutes, 44 755 200 secondes</span></article>
         <article>
             <h3>Durée de la formation</h3>
-            <span>3 ans</span>
+            <span itemprop="duration">3 ans</span>
         </article>
         <article>
             <h3>Nombre de crédits necessaire</h3>
@@ -68,7 +69,7 @@
         </article>
         <article>
             <h3>Etude</h3>
-            <span>Infographie orienté Web</span>
+            <span itemprop="about">Infographie orienté Web</span>
         </article>
     </section>
 
@@ -158,26 +159,29 @@
             <h3>Php</h3>
         </article>
     </section>
-    <section>
+    <section class="form" itemscope itemtype="https://schema.org/ContactPoint">
         <h2>Mon formulaire de contact</h2>
         <form>
             <label for="firstName">Entrez votre prenom</label>
-            <input id="firstName" value="firstName" name="firstName" placeholder="Entrez votre prénom">
+            <input id="firstName" value="firstName" name="firstName" itemprop="name" placeholder="Entrez votre prénom">
             <label for="lastName">Entrez votre nom</label>
-            <input id="lastName" value="lastName" name="lastName" placeholder="Entrez votre nom">
+            <input id="lastName" value="lastName" name="lastName" itemprop="lastName" placeholder="Entrez votre nom">
             <label for="commentaire">Laissez un petit commentaire</label>
-            <textarea id="commentaire" name="commentaire" rows="10" cols="20" ></textarea>
+            <textarea id="commentaire" name="commentaire" rows="10" cols="20" itemprop="comment"></textarea>
 
         </form>
     </section>
 </main>
 
 <footer>
-    <section class="container">
+    <section class="footer">
         <h2 class="hidden">Footer</h2>
         <span class="title">Dylan Piquin Cv</span>
         <span class="description-projet">Le but de se projet était de choisir un site pour ensuite le refaire de A a Z en l'adaptant pour un Cv</span>
-        <span>A propos de moi </span>
+        <span class="me">A propos de moi </span>
+    </section>
+<section class="container">
+        <h3>Test</h3>
         <span class="item">Home</span>
         <span class="item">Profile</span>
         <span class="item">Expérience</span>
@@ -190,6 +194,11 @@
         <span class="item">Compétences transversales</span>
         <span class="item"> À propos de moi</span>
         <span class="item">Me suivre</span>
+</section>
+    <section class="reseaux">
+        <h2 class="hidden">Mes réseaux</h2>
+        <span class="follow">Me suivre</span>
+
     </section>
 </footer>
 </body>
