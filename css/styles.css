@@ -25,6 +25,34 @@
 
 }
 
+/*Mes compétence*/
+.competence{
+    margin-left: 24px;
+}
+.container_competence{
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+
+}
+.titel-competence{
+    font-size: 29px;
+    font-family: Inter,sans-serif;
+    line-height: 29px;
+    font-weight: 700;
+    color: #1B1B1B;
+    margin-bottom: 54px;
+}
+
+
+.competence_1,.competence_2,.competence_3,.competence_4{
+    background-color: black;
+    padding-bottom: 175px;
+
+}
+
+
+
 /*Section footer*/
 .footer {
     font-family: Inter,sans-serif;
@@ -32,6 +60,7 @@
     color: white;
     padding-top: 9.625em; /* 154px / 16*/
     padding-left: 1.5em; /* 24 / 16*/
+    margin-top: 10px;
 }
 
 .title {
