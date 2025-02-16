@@ -1,6 +1,8 @@
-html,body{
+
+html, body {
     overflow-x: hidden;
 }
+
 .hidden {
     display: none;
 }
@@ -28,44 +30,157 @@ html,body{
 
 }
 
+/* section container_profil */
+.item_list:active, .item_list_2:active, .item_list_3:active {
+    border: 5px solid blue;
+    position: relative;
+}
+
+.item_list_2:active::after, .item_list_3:active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+}
+
+.content {
+    display: none;
+    opacity: 0;
+    position: absolute; /* Empêche le scroll */
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.content:target {
+    display: block;
+    opacity: 1;
+    position: relative; /* Réaffiche au bon endroit */
+}
+
+.container_profil {
+    margin-left: 24px;
+
+}
+
+.container_list {
+    font-size: 1.125em; /* 18 / 16 */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-weight: 600;
+    margin-bottom: 0.5555em; /* 10 / 18 */
+    color: black;
+}
+
+.item_list {
+    margin-bottom: 10px;
+}
+
+.title_profil {
+    font-size: 1.375em; /* 22 / 16 */
+    font-family: Inter, sans-serif;
+    font-weight: 700;
+    margin-bottom: 0.5454em; /* 12 / 22 */
+}
+
+.description_profil {
+    font-size: 0.875em; /* 14 / 16 */
+    font-family: "Public Sans", sans-serif;
+    font-weight: 700;
+    margin-bottom: 1.7142em; /* 24 / 14 */
+}
+
+.text_profil {
+    font-size: 0.875em; /* 14 / 16 */
+    font-family: "Public Sans", sans-serif;
+    margin-top: 1.7142em; /* 24 / 14 */
+    margin-right: 1.7142em; /* 24 / 14 */
+    line-height: 1.7142em; /* 24 / 14 */
+}
+
+/* Section 10 choses a savoir sur moi */
+.container_quality {
+    background-color: black;
+    overflow-x: auto;
+    margin-bottom: 1.5em; /* 24 / 16*/
+
+}
+
+
+.number {
+    font-size: 1.5em; /* 24 / 16*/
+    color: #959599;
+    margin-left: 1em; /* 24 / 24 */
+
+}
+
+.title_quality {
+    font-size: 1.125em; /* 18 / 16 */
+    color: white;
+    margin-left: 1.33333em; /* 24 / 18 */
+    margin-top: 1.33333em; /* 24 / 18 */
+}
+
+.main_title {
+    font-size: 1.3333em; /* 24 / 16 */
+    text-align: center;
+    color: white;
+    margin-top: 35px; /* 35 / 24 */
+}
+
+.text_quality {
+    font-size: 16px; /* 16 / 16 */
+    color: white;
+    margin: 1.33333em; /* 24 / 16 */
+    display: block;
+}
+
+.line {
+    margin: 24px;
+}
+
 /*Mes compétence*/
-.competence{
+.competence {
     margin-left: 24px;
 }
-.container_competence{
+
+.container_competence {
     display: flex;
     gap: 15px;
     flex-direction: row;
+    overflow-x: auto;
 
 }
-.titel-competence{
-    font-size: 29px;
-    font-family: Inter,sans-serif;
-    line-height: 29px;
+
+.titel-competence {
+    font-size: 1.8125em; /* 29 / 16*/
+    font-family: Inter, sans-serif;
+    line-height: 1em;
     font-weight: 700;
     color: #1B1B1B;
-    margin-bottom: 54px;
+    margin-bottom: 1.8620em; /* 54 / 29 */
 }
-.item_competence_1,.item_competence_2,.item_competence_3,.item_competence_4{
+
+.item_competence_1, .item_competence_2, .item_competence_3, .item_competence_4 {
     background-color: black;
 }
-.titel-competence_1,.titel-competence_2,.titel-competence_3,.titel-competence_4{
-    font-size: 1.375em;/* 22 / 16*/
-    font-family: "Public Sans",sans-serif;
-    top: 18.88em;/* 400 / 22*/
-    left: 0.7272em;/* 16  / 22 */
+
+.titel-competence_1, .titel-competence_2, .titel-competence_3, .titel-competence_4 {
+    font-size: 1.375em; /* 22 / 16*/
+    font-family: "Public Sans", sans-serif;
+    top: 18.88em; /* 400 / 22*/
+    left: 0.7272em; /* 16  / 22 */
     color: white;
     position: relative;
 }
 
 
-
-
-
-
 /*Section footer*/
 .footer {
-    font-family: Inter,sans-serif;
+    font-family: Inter, sans-serif;
     background-color: black;
     color: white;
     padding-top: 9.625em; /* 154px / 16*/
@@ -135,15 +250,17 @@ section.container {
 }
 
 
-.other{
-font-size: 14px;
-display: block;
-margin-bottom: 18px;
+.other {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 18px;
 }
-.news{
-font-size: 14px;
+
+.news {
+    font-size: 14px;
 }
-.container_2{
+
+.container_2 {
     color: #959599;
     margin-top: 73px;
     display: grid;
@@ -151,25 +268,16 @@ font-size: 14px;
     grid-template-columns: repeat(2, 1fr);
     margin-bottom: 66px;
 }
-.page-details{
-    font-family: "Public Sans",sans-serif;
+
+.page-details {
+    font-family: "Public Sans", sans-serif;
     font-size: 14px;
-    color: #959599 ;
+    color: #959599;
     display: flex;
     gap: 24px;
     flex-direction: column;
     padding-bottom: 55px;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 @media screen and (min-width: 1024px) {
