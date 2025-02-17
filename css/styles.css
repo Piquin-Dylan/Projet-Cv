@@ -27,16 +27,36 @@ html, body {
     margin-left: 14px;
     color: white;
     padding-bottom: 135px;
-
+    margin-bottom: 24px;
 }
 
+/* Section option du diplome */
+
+.title_info{
+    font-size: 14px;
+    font-family: Inter,sans-serif;
+    margin-left: 24px;
+    margin-bottom: 35px;
+}
+.info{
+  /*  display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    */
+}
+
+
+
+
+
+
 /* section container_profil */
-.item_list:active, .item_list_2:active, .item_list_3:active {
+.item_list:active,.item_list_2:active,.item_list_3:active,.item_list_4:active {
     border: 5px solid blue;
     position: relative;
 }
 
-.item_list_2:active::after, .item_list_3:active::after {
+.item_list:active::after,.item_list_2:active::after,.item_list_3:active::after,.item_list_4:active::after  {
     content: "";
     position: absolute;
     left: 0;
@@ -46,14 +66,7 @@ html, body {
     background-color: black;
 }
 
-.content {
-    display: none;
-    opacity: 0;
-    position: absolute; /* Empêche le scroll */
-    top: 0;
-    left: 0;
-    width: 100%;
-}
+
 
 .content:target {
     display: block;
@@ -205,6 +218,8 @@ html, body {
     font-family: "Public Sans", sans-serif;
     color: #B9B9BB;
     display: block;
+    margin-right: 24px;
+
 }
 
 .me {

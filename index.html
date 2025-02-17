@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cv de Piquin Dylan</title>
+    <script defer src="javascript/main.js"></script>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
@@ -55,30 +56,41 @@
         </section>
 
     </div>
-    <section class="Info" itemscope itemtype="https://schema.org/EducationEvent">
+    <section class="info" itemscope itemtype="https://schema.org/EducationEvent">
         <h2 class="hidden">Info diplome</h2>
-        <span> Obtention de mon diplome</span>
-        <article>
-            <h3>Temps avant d'être diplomer</h3>
-            <span itemprop="endDate">12 432 heures, 745 920 minutes, 44 755 200 secondes</span></article>
-        <article>
-            <h3>Durée de la formation</h3>
-            <span itemprop="duration">3 ans</span>
-        </article>
-        <article>
-            <h3>Nombre de crédits necessaire</h3>
-            <span>180 crédits</span>
-        </article>
-        <article>
-            <h3>Etude</h3>
-            <span itemprop="about">Infographie orienté Web</span>
-        </article>
+        <span class="title_info"> Obtention de mon diplome</span>
+        <svg class="arrow_left" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+            <path d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8.009 8.009 0 0 1-8 8z"/>
+            <path d="M13.293 7.293 8.586 12l4.707 4.707 1.414-1.414L11.414 12l3.293-3.293-1.414-1.414z"/>
+        </svg>
+        <svg class="arrow_right" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+            <path d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8.009 8.009 0 0 1-8 8z"/>
+            <path d="M9.293 8.707 12.586 12l-3.293 3.293 1.414 1.414L15.414 12l-4.707-4.707-1.414 1.414z"/>
+        </svg>
+        <div class="article">
+
+            <article>
+                <h3>Temps avant d'être diplomer</h3>
+                <span itemprop="endDate">12 432 heures, 745 920 minutes, 44 755 200 secondes</span></article>
+            <article>
+                <h3>Durée de la formation</h3>
+                <span itemprop="duration">3 ans</span>
+            </article>
+            <article>
+                <h3>Nombre de crédits necessaire</h3>
+                <span>180 crédits</span>
+            </article>
+            <article>
+                <h3>Etude</h3>
+                <span itemprop="about">Infographie orienté Web</span>
+            </article>
+        </div>
     </section>
 
     <section class="container_profil">
         <h2 class="hidden">Mon profile</h2>
         <ul class="container_list">
-            <li class="item_list"><a href="#item_1">Profile</a></li>
+            <li><a class="item_list" href="#item_1">Profile</a></li>
             <li><a class="item_list_2" href="#item_2">Parcours Scolaire</a></li>
             <li><a class="item_list_3" href="#item_3">Expérience</a></li>
             <li><a class="item_list_4" href="#item_4">Environnement</a></li>
@@ -86,7 +98,7 @@
         </ul>
         <hr class="line">
 
-        <article id="item_1" class="about_me content default">
+        <article id="item_1" class="profil content default">
             <h3 class="title_profil">A propos de moi</h3>
             <span class="description_profil">Je m'appelle Dylan Piquin, j'ai 20 aet je suis étudiant à la HELP à  Seraing dans l'option Web.</span>
             <p class="text_profil">Actuellement en 2ème année en technique graphique dans l’option orienté Web. Mon but
