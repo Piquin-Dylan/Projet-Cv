@@ -11,6 +11,7 @@ html, body {
     display: none;
 }
 
+
 .section-description {
     background-color: black;
 
@@ -104,6 +105,20 @@ a.item_list, a.item_list_2, a.item_list_3, a.item_list_4 {
 }
 
 
+/* Responsive pour la partie navigation header */
+
+@media screen and (min-width: 1024px ) {
+    .svg__hidden{
+        display: none;
+    }
+
+}
+@media screen and (max-width: 1023px){
+        .menu{
+            display: none;
+        }
+}
+
 .title-name {
     font-family: Inter sans-serif;
     font-size: 4.5em; /* 72 / 16 */
@@ -123,10 +138,6 @@ a.item_list, a.item_list_2, a.item_list_3, a.item_list_4 {
     margin-bottom: 1.5em; /* 24 / 16*/
     max-width: 28em; /* 450 / 16 */
 }
-
-
-
-
 
 
 /* Section option du diplome */
