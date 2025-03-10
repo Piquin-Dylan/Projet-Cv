@@ -3,6 +3,10 @@ html, body {
     overflow-x: hidden;
 }
 
+.img_navigation {
+    display: none;
+}
+
 .hidden {
     display: none;
 }
@@ -12,51 +16,163 @@ html, body {
 
 }
 
+a.item_list, a.item_list_2, a.item_list_3, a.item_list_4 {
+    color: black;
+    text-decoration: none;
+}
+
+/* header */
+
+.navigation {
+    background-color: black;
+    color: red;
+    padding: 0.625em; /* 10 / 16 */
+}
+
+.navigation__principal {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: nowrap;
+    list-style: none;
+    padding-bottom: 1em; /* 16 / 16 */
+}
+
+.btn-1:active, .btn-2:active, .btn-3:active, .search:active {
+    border: 5px solid blue;
+    transform: none;
+    outline: none; /* Supprimer le contour */;
+}
+
+.menu li {
+    margin-right: 1.25em; /* 20 / 16 */
+    white-space: nowrap;
+}
+
+/* Boutons du menu */
+.btn-1, .btn-2, .btn-3 {
+    font-size: 1.0625em; /* 17 / 16 */
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 0.5882em 0.8823em; /* 10 / 17   15 / 17 */
+    cursor: pointer;
+}
+
+
+.search {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    padding: 0.3125em; /* 5 / 16 */
+    min-width: 120px;
+    margin-right: auto;
+}
+
+
+.navigation__secondaire {
+    display: flex;
+    flex-wrap: nowrap;
+    list-style: none;
+    background-color: #17171b;
+    color: white;
+    padding-top: 1em; /* 16 / 16 */
+    padding-bottom: 1em; /* 16 / 16 */
+    padding-left: 18.75em; /* 300  /16 */
+    cursor: pointer;
+}
+
+.navigation__secondaire li {
+    margin-right: auto;
+    white-space: nowrap;
+}
+
+.navigation__secondaire ul {
+    display: flex;
+    gap: 1.25em; /* 20 / 16 */
+
+}
+
+.sous-menu:active {
+    border: 5px solid blue;
+    transform: none;
+    outline: none; /* Supprimer le contour */;
+
+
+}
+
+
 .title-name {
     font-family: Inter sans-serif;
-    font-size: 3em; /* 48 / 16 */
+    font-size: 4.5em; /* 72 / 16 */
     font-weight: 800;
     color: white;
-    margin: 0.33em 14px 0.52em; /* 16  / 48*/
+    padding: 3.1944em 0.3333em 0; /* 230 / 72   24 / 72  */
+    margin-bottom: 0.3333em; /* 20 / 72 */
 }
 
 .description {
     font-family: "Public Sans", sans-serif;
     font-size: 1em; /* 16 / 16*/
-    line-height: 1.625em; /* 26 / 16*/
-    margin-left: 14px;
+    line-height: 2em; /* 32 / 16*/
+    margin-left: 1.5em; /* 24 / 16 */
     color: white;
-    padding-bottom: 135px;
-    margin-bottom: 24px;
+    padding-bottom: 8.4em; /* 135 / 16 */
+    margin-bottom: 1.5em; /* 24 / 16*/
+    max-width: 28em; /* 450 / 16 */
 }
+
+
+
+
+
 
 /* Section option du diplome */
 
-.title_info{
+.title_info {
     font-size: 14px;
-    font-family: Inter,sans-serif;
+    font-family: Inter, sans-serif;
     margin-left: 24px;
     margin-bottom: 35px;
-}
-.info{
-  /*  display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    */
+
 }
 
+.article article {
+    display: none; /* Cache tous les articles */
+}
 
+.article article:first-child {
+    display: block; /* Affiche seulement le premier article */
+    margin: 24px;
+    text-align: center;
+}
 
+.article article:nth-child(2) {
+    color: red;
+}
 
+.arrow_left {
+    position: relative;
+    top: 55px;
+    right: 185px;
+}
+
+.arrow_right {
+    position: relative;
+    top: 55px;
+    left: 30px;
+}
 
 
 /* section container_profil */
-.item_list:active,.item_list_2:active,.item_list_3:active,.item_list_4:active {
+.item_list:active, .item_list_2:active, .item_list_3:active, .item_list_4:active {
     border: 5px solid blue;
     position: relative;
 }
 
-.item_list:active::after,.item_list_2:active::after,.item_list_3:active::after,.item_list_4:active::after  {
+.item_list:active::after, .item_list_2:active::after, .item_list_3:active::after, .item_list_4:active::after {
     content: "";
     position: absolute;
     left: 0;
@@ -65,7 +181,6 @@ html, body {
     height: 3px;
     background-color: black;
 }
-
 
 
 .content:target {
@@ -117,8 +232,7 @@ html, body {
 /* Section 10 choses a savoir sur moi */
 .container_quality {
     background-color: black;
-    overflow-x: auto;
-    margin-bottom: 1.5em; /* 24 / 16*/
+    grid-template-columns: repeat(2, 1fr );
 
 }
 
@@ -147,6 +261,7 @@ html, body {
 .text_quality {
     font-size: 16px; /* 16 / 16 */
     color: white;
+    /**/
     margin: 1.33333em; /* 24 / 16 */
     display: block;
 }
@@ -158,6 +273,7 @@ html, body {
 /*Mes compétence*/
 .competence {
     margin-left: 24px;
+    margin-right: 24px;
 }
 
 .container_competence {
@@ -181,7 +297,7 @@ html, body {
     background-color: black;
 }
 
-.titel-competence_1, .titel-competence_2, .titel-competence_3, .titel-competence_4 {
+.title-competence_1, .title-competence_2, .title-competence_3, .title-competence_4 {
     font-size: 1.375em; /* 22 / 16*/
     font-family: "Public Sans", sans-serif;
     top: 18.88em; /* 400 / 22*/
@@ -208,6 +324,7 @@ html, body {
     font-weight: bold;
     display: block;
     margin-bottom: 2.444444em; /* 44 / 18*/
+    width: 100%;
 
 }
 
@@ -295,12 +412,76 @@ section.container {
 }
 
 
-@media screen and (min-width: 1024px) {
-    .title-name {
-        font-size: 72px;
-        margin-left: 24px;
-        margin-bottom: 36px;
-        background-color: black;
+.img {
+    max-width: 125px;
+    max-height: 125px;
+    margin-left: 24px;
+}
+
+
+/* Partie responsive */
+
+/* responsive section header */
+
+@media screen and (max-width: 1024px) {
+    .img_navigation {
+        display: inline;
+        margin-top: 24px;
+
     }
 
+    .img_navigation:nth-child(2) {
+        margin-left: 919px;
+    }
+
+    .img_navigation:nth-child(1) {
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .container_competence {
+        display: flex;
+        flex-direction: row;
+        gap: 10px; /* Espacement entre les éléments */
+        width: 100%; /* S'assure que le conteneur prend toute la largeur */
+    }
+
+    .competence_1, .competence_2, .competence_3, .competence_4 {
+        flex-grow: 1; /* Chaque élément prendra une part égale de l'espace */
+        flex-basis: 0; /* Assure une répartition uniforme */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .item_competence_1, .item_competence_2, .item_competence_3, .item_competence_4 {
+        width: 100%; /* Les images prennent toute la largeur de leur conteneur parent */
+        height: 250px; /* Définir une hauteur fixe pour toutes les images */
+        object-fit: cover; /* Cette propriété s'assure que l'image est redimensionnée sans être déformée */
+        max-width: 250px; /* Limite la largeur maximale des images */
+        padding: 91px 10px 91px;
+
+
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container_quality {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: center;
+        padding-top: 180px;
+        padding-left: 380px;
+        padding-right: 380px;
+    }
+}
+
+
+@media screen and (min-width: 640px) {
+    .container_quality {
+        margin-bottom: 1.5em; /* 24 / 16*/
+        display: grid;
+    }
 }
