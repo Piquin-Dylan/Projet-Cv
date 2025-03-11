@@ -75,26 +75,25 @@ a.item_list, a.item_list_2, a.item_list_3, a.item_list_4 {
 
 .navigation__secondaire {
     display: flex;
+    gap: 20px;
     flex-wrap: nowrap;
-    list-style: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     background-color: #17171b;
     color: white;
     padding-top: 1em; /* 16 / 16 */
     padding-bottom: 1em; /* 16 / 16 */
-    padding-left: 18.75em; /* 300  /16 */
     cursor: pointer;
+    overflow: hidden;
 }
 
 .navigation__secondaire li {
-    margin-right: auto;
-    white-space: nowrap;
-}
-
-.navigation__secondaire ul {
     display: flex;
-    gap: 1.25em; /* 20 / 16 */
-
+    white-space: nowrap;
+    flex-shrink: 0;
 }
+
 
 .sous-menu:active {
     border: 5px solid blue;
@@ -108,15 +107,62 @@ a.item_list, a.item_list_2, a.item_list_3, a.item_list_4 {
 /* Responsive pour la partie navigation header */
 
 @media screen and (min-width: 1024px ) {
-    .svg__hidden{
+    .svg__hidden {
+        display: none;
+    }
+
+    .explore__section {
         display: none;
     }
 
 }
-@media screen and (max-width: 1023px){
-        .menu{
-            display: none;
-        }
+
+@media screen and (max-width: 1023px) {
+    .menu {
+        display: none;
+    }
+
+    .navigation__secondaire {
+        display: none;
+    }
+
+    .svg {
+        display: flex;
+        white-space: nowrap;
+        justify-content: space-between; /* Positionne les éléments aux extrémités avec un espacement automatique */
+        align-items: center; /* Centre les éléments verticalement */
+        width: 100%; /* Le conteneur prend toute la largeur disponible */
+    }
+
+    .svg__hidden {
+        display: flex;
+        margin-left: 24px; /* Décalage à gauche de l'icône */
+        gap: 16px; /* Espacement entre les icônes */
+        flex-wrap: nowrap; /* Empêche le passage à la ligne */
+        align-items: center; /* Centre verticalement les icônes */
+    }
+
+    .svg__hidden svg {
+        width: 24px; /* Taille des icônes */
+        height: 24px;
+        flex-shrink: 0; /* Empêche les icônes de se réduire */
+        flex-grow: 0; /* Empêche les icônes de se développer */
+    }
+
+    .svg__hidden:first-child {
+        margin-right: auto; /* Ajoute un espacement de 600px entre les deux éléments */
+    }
+
+    nav.navigation__smartphone {
+        font-size: 0.875em; /* 14 / 16 */
+        color: white;
+        background-color: #17171b;
+        padding: 1.14em; /* 16 / 14 */
+    }
+    nav.navigation__smartphone:active{
+        border: 5px solid blue;
+    }
+
 }
 
 .title-name {

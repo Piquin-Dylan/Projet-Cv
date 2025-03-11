@@ -26,13 +26,15 @@
         </ul>
 
     </nav>
-    <img width="50" height="50" alt="image d'une loupe de recherche" class="svg__hidden" src="img/icons8-menu.svg">
-    <img width="50" height="50" alt="Image d'un burger menu" class="svg__hidden" src="img/icons8-loupe.svg">
+    <div class="svg">
+        <img width="30" height="30" alt="image d'une loupe de recherche" class="svg__hidden" src="img/icons8-menu.svg">
+        <img width="30" height="30" alt="Image d'un burger menu" class="svg__hidden" src="img/icons8-loupe.svg">
+    </div>
     <div class="menu">
+
 
         <button class="btn-1">Explore
             <svg class="icone" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                 xmlns:xlink="http://www.w3.org/1999/xlink"
                  x="0px" y="0px" width="16px" height="17px" viewBox="0 0 16 17"
                  style="enable-background:new 0 0 16 17;" xml:space="preserve">
     <g>
@@ -45,6 +47,9 @@
         </g>
     </g>
 </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
+                <g transform="translate(25.6,25.6) scale(0.8,0.8)"><g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M0,9v2h50v-2zM0,24v2h50v-2zM0,39v2h50v-2z"></path></g></g></g>
+            </svg>
         </button>
         <input class="search" type="search" placeholder="Search ...">
         <button class="btn-2">A propos de moi</button>
@@ -52,10 +57,10 @@
     </div>
 </header>
 <main>
-    <div class="navigation__secondaire">
-        <nav>
+    <div>
+        <nav class="navigation__smartphone">
             <h2 class="hidden">Navigation secondaire</h2>
-            <ul>
+            <ul class="navigation__secondaire">
                 <li class="sous-menu">Dylan Home</li>
                 <li class="sous-menu">Profil</li>
                 <li class="sous-menu">Parcours scolaire</li>
@@ -64,6 +69,7 @@
                 <li class="sous-menu">Compétence</li>
                 <li class="sous-menu">Chose a savoir</li>
             </ul>
+            <span class="explore__section">Explorer la section</span>
         </nav>
     </div>
     <div itemscope itemtype="https://schema.org/Person">
