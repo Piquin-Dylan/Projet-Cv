@@ -47,10 +47,154 @@ a.item_list, a.item_list_2, a.item_list_3, a.item_list_4 {
     outline: none; /* Supprimer le contour */;
 }
 
-.menu li {
-    margin-right: 1.25em; /* 20 / 16 */
-    white-space: nowrap;
+/* Style du bouton */
+.btn-2 {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
 }
+
+
+/*  début du  menu déroulant */
+
+.no-js .dropdown .menu__deroulant {
+    display: none; /* Caché par défaut */
+}
+
+/* Desktop : affichage au survol */
+.no-js .dropdown:hover .menu__deroulant,
+.no-js .dropdown .menu__deroulant:hover {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Mobile : affichage en tapant sur l'élément */
+.no-js .dropdown:focus-within .menu__deroulant {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown {
+    min-width: 15em;
+    position: relative;
+    margin: 2em;
+}
+
+.selected {
+    font-size: 17px;
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown * {
+    box-sizing: border-box;
+}
+
+.select {
+    color: blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.3s;
+    max-width: 250px;
+    padding: 16px;
+    margin-right: 16px;
+}
+
+.select-clicked {
+    border: 5px blue solid;
+    padding: 16px;
+    max-width: 250px;
+    box-shadow: 0 0 0.8em gray;
+}
+
+.caret {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid white;
+    transition: 0.3s;
+    position: absolute;
+    left: 160px;
+}
+
+#caret {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid white;
+    transition: 0.3s;
+    position: absolute;
+    left: 115px;
+}
+
+
+.caret-rotate {
+    transform: rotate(180deg);
+}
+
+.menu__deroulant {
+    font-size: 16px;
+    list-style: none;
+    padding: 0.2em 0.5em;
+    background: black;
+    border-radius: 0.5em;
+    color: white;
+    position: absolute;
+    top: 3em;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    z-index: 1;
+}
+
+.menu__deroulant a {
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+}
+
+.menu__deroulant a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 0.5em 0;
+}
+
+.menu__deroulant li a:hover {
+    background: #23242a;
+    border-radius: 0.5em;
+}
+
+.menu__deroulant li:focus {
+    border-bottom: 2px white;
+}
+
+.active {
+    background: #23242a;
+}
+
+.menu-open {
+    display: block;
+    opacity: 1;
+}
+
+
+/* fin menu déroulant  */
 
 /* Boutons du menu */
 .btn-1, .btn-2, .btn-3 {
@@ -62,7 +206,6 @@ a.item_list, a.item_list_2, a.item_list_3, a.item_list_4 {
     cursor: pointer;
 }
 
-
 .search {
     background-color: black;
     color: white;
@@ -70,6 +213,9 @@ a.item_list, a.item_list_2, a.item_list_3, a.item_list_4 {
     padding: 0.3125em; /* 5 / 16 */
     min-width: 120px;
     margin-right: auto;
+    max-width: 100px;
+    max-height: 20px;
+    margin-top: 42px;
 }
 
 
@@ -85,7 +231,6 @@ a.item_list, a.item_list_2, a.item_list_3, a.item_list_4 {
     padding-top: 1em; /* 16 / 16 */
     padding-bottom: 1em; /* 16 / 16 */
     cursor: pointer;
-    overflow: hidden;
 }
 
 .navigation__secondaire li {
@@ -99,8 +244,10 @@ a.item_list, a.item_list_2, a.item_list_3, a.item_list_4 {
     border: 5px solid blue;
     transform: none;
     outline: none; /* Supprimer le contour */;
+}
 
-
+.navigation__smartphone {
+    color: red;
 }
 
 
@@ -117,6 +264,8 @@ a.item_list, a.item_list_2, a.item_list_3, a.item_list_4 {
 
 }
 
+
+/* Partie header */
 @media screen and (max-width: 1023px) {
     .menu {
         display: none;
@@ -125,6 +274,7 @@ a.item_list, a.item_list_2, a.item_list_3, a.item_list_4 {
     .navigation__secondaire {
         display: none;
     }
+
 
     .svg {
         display: flex;
@@ -153,17 +303,27 @@ a.item_list, a.item_list_2, a.item_list_3, a.item_list_4 {
         margin-right: auto; /* Ajoute un espacement de 600px entre les deux éléments */
     }
 
+    img.svg__hidden:active {
+        border: 5px solid blue;
+        cursor: pointer;
+    }
+
     nav.navigation__smartphone {
         font-size: 0.875em; /* 14 / 16 */
         color: white;
         background-color: #17171b;
         padding: 1.14em; /* 16 / 14 */
+
     }
-    nav.navigation__smartphone:active{
+
+
+    nav.navigation__smartphone:active {
         border: 5px solid blue;
     }
 
+
 }
+
 
 .title-name {
     font-family: Inter sans-serif;
@@ -185,6 +345,9 @@ a.item_list, a.item_list_2, a.item_list_3, a.item_list_4 {
     max-width: 28em; /* 450 / 16 */
 }
 
+.description:hover {
+
+}
 
 /* Section option du diplome */
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,34 +32,47 @@
     </div>
     <div class="menu">
 
-
         <button class="btn-1">Explore
-            <svg class="icone" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                 x="0px" y="0px" width="16px" height="17px" viewBox="0 0 16 17"
-                 style="enable-background:new 0 0 16 17;" xml:space="preserve">
-    <g>
-        <g>
-            <path fill="white"
-                  d="M8,16.5c-4.4,0-8-3.6-8-8s3.6-8,8-8s8,3.6,8,8S12.4,16.5,8,16.5z M8,1.5c-3.9,0-7,3.1-7,7c0,3.9,3.1,7,7,7 s7-3.1,7-7C15,4.6,11.9,1.5,8,1.5z"></path>
-        </g>
-        <g>
-            <path fill="white" d="M8,10l2.6-2.6L11.2,8L8,11.2L4.8,8l0.6-0.6L8,10z"></path>
-        </g>
-    </g>
-</svg>
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
-                <g transform="translate(25.6,25.6) scale(0.8,0.8)"><g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M0,9v2h50v-2zM0,24v2h50v-2zM0,39v2h50v-2z"></path></g></g></g>
-            </svg>
+
         </button>
         <input class="search" type="search" placeholder="Search ...">
-        <button class="btn-2">A propos de moi</button>
-        <button class="btn-3">Multimédia</button>
+
+
+        <div class="dropdown">
+            <div class="select">
+                <button class="selected">A propos de moi</button>
+                <div class="caret"></div>
+            </div>
+            <div class="menu__deroulant">
+                <a href="#">Option 1</a>
+                <a href="#">Option 2</a>
+                <a href="#">Option 3</a>
+                <a href="#">Figma</a>
+                <a href="#">Option 4</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <div class="select">
+                <button class="selected">Multimédia</button>
+                <div id="caret" class="caret "></div>
+            </div>
+            <div class="menu__deroulant">
+                <a href="#">Option 1</a>
+                <a href="#">Option 2</a>
+                <a href="#">Option 3</a>
+                <a href="#">Figma</a>
+                <a href="#">Option 4</a>
+            </div>
+        </div>
+
+
     </div>
 </header>
 <main>
     <div>
         <nav class="navigation__smartphone">
             <h2 class="hidden">Navigation secondaire</h2>
+            <button class="explore__section">Explorer la section</button>
             <ul class="navigation__secondaire">
                 <li class="sous-menu">Dylan Home</li>
                 <li class="sous-menu">Profil</li>
@@ -69,7 +82,6 @@
                 <li class="sous-menu">Compétence</li>
                 <li class="sous-menu">Chose a savoir</li>
             </ul>
-            <span class="explore__section">Explorer la section</span>
         </nav>
     </div>
     <div itemscope itemtype="https://schema.org/Person">
@@ -190,7 +202,7 @@
             <hr class="line">
         </article>
         <article class="grid-item">
-            <img class="img" src="img/javascript-logo-svgrepo-com.svg">
+            <img alt="logo de javascript" class="img" src="img/javascript-logo-svgrepo-com.svg">
             <span class="text_quality">Je suis quelqu’un de ponctuel, quasiment jamais en retard, carpour moi, c’est super important.</span>
             <hr class="line">
         </article>
