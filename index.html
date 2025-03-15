@@ -14,21 +14,8 @@
 
 
     <h1 aria-level="1" class="hidden">Cv de Piquin Dylan</h1>
-    <nav class="navigation">
-        <h2 aria-level="2" class="hidden" id="navigation">Navigation principal</h2>
 
-        <ul class="navigation__principal">
-            <li class="menu-item"><a href="#">Home</a></li>
-            <li class="menu-item"><a href="#">About</a></li>
-            <li class="menu-item"><a href="#">Services</a></li>
-            <li class="menu-item"><a href="#">Product</a></li>
-            <li class="menu-item"><a href="#">Contact</a></li>
-        </ul>
-
-    </nav>
     <div class="svg">
-        <img width="30" height="30" alt="image d'une loupe de recherche" class="svg__hidden" src="img/icons8-menu.svg">
-        <img width="30" height="30" alt="Image d'un burger menu" class="svg__hidden" src="img/icons8-loupe.svg">
     </div>
     <div class="menu">
 
@@ -65,23 +52,36 @@
             </div>
         </div>
 
+    </div>
 
+    <label class="hamburger-menu">
+        <input class="croix" type="checkbox"/>
+    </label>
+    <div class="sidebar">
+        <a class="item_menu">Dylan Home</a>
+        <a class="item_menu">Profil</a>
+        <a class="item_menu">Parcours scolaire</a>
+        <a class="item_menu">Expérience</a>
+        <a class="item_menu">Environnement</a>
+        <a class="item_menu">Compétence</a>
+        <a class="item_menu">Chose a savoir</a>
     </div>
 </header>
 <main>
     <div>
         <nav class="navigation__smartphone">
             <h2 class="hidden">Navigation secondaire</h2>
+
             <button class="explore__section">Explorer la section</button>
-            <ul class="navigation__secondaire">
-                <li class="sous-menu">Dylan Home</li>
-                <li class="sous-menu">Profil</li>
-                <li class="sous-menu">Parcours scolaire</li>
-                <li class="sous-menu">Expérience</li>
-                <li class="sous-menu">Environnement</li>
-                <li class="sous-menu">Compétence</li>
-                <li class="sous-menu">Chose a savoir</li>
-            </ul>
+            <div class="navigation__secondaire">
+                <a class="sous-menu">Dylan Home</a>
+                <a class="sous-menu">Profil</a>
+                <a class="sous-menu">Parcours scolaire</a>
+                <a class="sous-menu">Expérience</a>
+                <a class="sous-menu">Environnement</a>
+                <a class="sous-menu">Compétence</a>
+                <a class="sous-menu">Chose a savoir</a>
+            </div>
         </nav>
     </div>
     <div itemscope itemtype="https://schema.org/Person">
