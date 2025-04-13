@@ -1,0 +1,35 @@
+/*Mes compétence*/
+.competence {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.container_competence {
+  display: flex;
+  gap: 15px;
+  flex-direction: row;
+  overflow-x: auto;
+
+}
+
+.titel-competence {
+  font-size: 1.8125em; /* 29 / 16*/
+  font-family: Inter, sans-serif;
+  line-height: 1em;
+  font-weight: 700;
+  color: #1B1B1B;
+  margin-bottom: 1.8620em; /* 54 / 29 */
+}
+
+.item_competence_1, .item_competence_2, .item_competence_3, .item_competence_4 {
+  background-color: black;
+}
+
+.title-competence_1, .title-competence_2, .title-competence_3, .title-competence_4 {
+  font-size: 1.375em; /* 22 / 16*/
+  font-family: "Public Sans", sans-serif;
+  top: 18.88em; /* 400 / 22*/
+  left: 0.7272em; /* 16  / 22 */
+  color: white;
+  position: relative;
+}

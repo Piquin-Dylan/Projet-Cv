@@ -1,0 +1,117 @@
+/*
+!*Section footer*!
+.footer {
+  font-family: Inter, sans-serif;
+  background-color: black;
+  color: white;
+  padding-top: 9.625em; !* 154px / 16*!
+  padding-left: 1.5em; !* 24 / 16*!
+  margin-top: 10px;
+  width: 100%;
+}
+
+.title {
+  font-size: 1.125em; !* 18 / 16*!
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 2.444444em; !* 44 / 18*!
+  width: 100%;
+
+}
+
+.description-projet {
+  font-size: 0.875em; !* 14 / 16*!
+  line-height: 1.642857142857143em; !* 23 / 14*!
+  margin-bottom: 1em; !* 14 / 14*!
+  font-family: "Public Sans", sans-serif;
+  color: #B9B9BB;
+  display: block;
+  margin-right: 24px;
+
+}
+
+.me {
+  font-size: 0.9em; !* 14.4 / 16*!
+  margin-bottom: 6.319em; !* 91 / 14.4*!
+  font-weight: normal;
+  font-family: Inter, sans-serif;
+}
+
+section.container {
+  font-size: 0.875em; !* 14/ 16 *!
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  background-color: black;
+  color: white;
+
+  padding: 6.5em 0 1.714em; !* 24 / 14 *! !* 91 / 14 *! !* 56 / 14*!
+}
+
+.item + .item {
+  margin-bottom: 0.800em; !* 11 / 16*!
+}
+
+.follow {
+  font-size: 0.875em; !* 14 / 16*!
+  font-family: Inter, sans-serif;
+  font-weight: normal;
+  color: #959599;
+  display: block;
+  margin-bottom: 0.714em; !* 10 / 14*!
+}
+
+.reseaux-social {
+  width: 10px;
+  height: 10px;
+  padding: 10px;
+  background-color: #17161B;
+  border-radius: 50%;
+  display: inline-flex;
+  margin-right: 10px;
+  margin-bottom: 14px;
+}
+
+
+.other {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 18px;
+}
+
+.news {
+  font-size: 14px;
+}
+
+.container_2 {
+  color: #959599;
+  margin-top: 73px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 66px;
+}
+
+.page-details {
+  font-family: "Public Sans", sans-serif;
+  font-size: 14px;
+  color: #959599;
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+  padding-bottom: 55px;
+}
+
+
+.img {
+  max-width: 125px;
+  max-height: 125px;
+  margin-left: 24px;
+}*/
+
+
+footer {
+  background-color: black;
+  color: white;
+}

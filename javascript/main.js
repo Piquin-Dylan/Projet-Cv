@@ -105,3 +105,13 @@ document.querySelectorAll('.dropdown').forEach(dropdown => {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    document.documentElement.classList.remove("no-js"); // Supprime la classe si JS est activé
+
+    const button = document.querySelector(".explore__section");
+    const menu = document.querySelector(".navigation__secondaire");
+
+    button.addEventListener("click", function () {
+        menu.classList.toggle("show");
+    });
+});

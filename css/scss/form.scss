@@ -1,0 +1,18 @@
+.container_form {
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+label {
+  display: block;
+  padding: 10px;
+}
+.title_form{
+  font-size: 32px;
+}
+#commentaire{
+  display: block;
+  margin-bottom: 16px;
+}
